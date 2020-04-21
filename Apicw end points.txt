@@ -1,0 +1,94 @@
+Baseurl: https://apicw.herokuapp.com/api/
+
+GIT link:
+	Web app: https://github.com/team-squadra/ApiCW_Website.git
+	Mobile app:
+
+registration:
+
+    name
+    nic_no
+    email
+    password
+    gender
+    phone_number
+    dob
+    address
+    type  - student or it_expert
+    status - approved / reject / pending
+
+    select *
+	https://apicw.herokuapp.com/api/user/allusers
+    Login
+	https://apicw.herokuapp.com/api/user/login
+    insert into
+	https://apicw.herokuapp.com/api/user/register
+    delete where email
+	https://apicw.herokuapp.com/api/user/deleteusr
+    update where email
+	https://apicw.herokuapp.com/api/user/updateusr
+    select where email
+	https://apicw.herokuapp.com/api/user/usrfromemail
+
+students:
+
+    email
+    gce_al
+    fam_languages
+    fam_ides
+    projects
+    description
+    git
+    linkedin
+    stack_overflow
+    profile_pic
+
+    select *
+	https://apicw.herokuapp.com/api/students/allstudents
+    insert into
+	https://apicw.herokuapp.com/api/students/regstudent
+    delete where email
+	https://apicw.herokuapp.com/api/students/deletestudent
+    update where email
+	https://apicw.herokuapp.com/api/students/updatestudent
+    select where email
+	https://apicw.herokuapp.com/api/students/studentfromemail
+
+    select where fam_languages
+	https://apicw.herokuapp.com/api/students/studentfromlangu
+    select where fam_ides
+	https://apicw.herokuapp.com/api/students/studentfromide
+    select where fam_ides,fam_languages
+	https://apicw.herokuapp.com/api/students/studentfromidelangu
+
+It_expert:
+
+    email
+    company
+    profession
+    company_id
+    profile_pic
+
+    select *
+	https://apicw.herokuapp.com/api/itexperts/allitexperts
+    insert into
+	https://apicw.herokuapp.com/api/itexperts/regitexperts
+    delete where email
+	https://apicw.herokuapp.com/api/itexperts/deleteitexperts
+    update where email
+	https://apicw.herokuapp.com/api/itexperts/updateitexperts
+    select where email
+	https://apicw.herokuapp.com/api/itexperts/itexpertsfromemail
+
+chat:
+
+    expert_id
+    student_id
+    expert_msg
+    student_msg
+    time
+
+    insert into
+	https://apicw.herokuapp.com/api/chats/regchat
+    select where expert_id,student_id
+	https://apicw.herokuapp.com/api/chats/chatsfrom
